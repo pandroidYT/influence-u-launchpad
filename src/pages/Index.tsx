@@ -58,8 +58,8 @@ const Index = () => {
           <div className="mt-16 relative">
             <div className="bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl p-8 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=400&fit=crop&crop=center" 
-                alt="People collaborating on social media content" 
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop&crop=center" 
+                alt="Content creator filming with professional setup" 
                 className="w-full h-64 md:h-80 object-cover rounded-xl"
               />
             </div>
@@ -85,14 +85,14 @@ const Index = () => {
               </p>
               <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600">
                 <p className="text-blue-800 italic">
-                  *Influence U is a fictional company created for a professional communications college class to demonstrate modern web design and marketing principles.
+                  *Influence U is a fictional company created by Professor Greg Thompson to help teach students effective communication.
                 </p>
               </div>
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&crop=center" 
-                alt="Team collaboration" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&crop=center" 
+                alt="Content creator working on laptop" 
                 className="w-full h-64 object-cover rounded-xl shadow-lg"
               />
             </div>
@@ -162,10 +162,13 @@ const Index = () => {
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join Us?</h2>
               <p className="text-xl mb-8 leading-relaxed">
-                Are you passionate about social media? Have the work ethic, creativity, and drive to make an impact? Join Influence U!
+                Are you passionate about social media? Have the work ethic, creativity, and drive to make an impact? We want to hear from you!
+              </p>
+              <p className="text-lg mb-6 leading-relaxed">
+                Call this number to leave a voicemail telling us about yourself and why you're interested, and we'll get back to you.
               </p>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 mb-8">
-                <p className="text-lg mb-2">Get started with a personal consultation</p>
+                <p className="text-lg mb-2">Leave us a voicemail</p>
                 <p className="text-2xl font-bold">📞 843-349-7108</p>
               </div>
               <Button 
@@ -194,7 +197,7 @@ const Index = () => {
             <CardContent className="p-8">
               <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mb-8">
                 <p className="text-blue-800 text-center">
-                  <strong>Note:</strong> This is a demonstration form for a college project. No data will be submitted or stored.
+                  <strong>Note:</strong> This is a demonstration form for a college communications project. For actual inquiries, please call the number above.
                 </p>
               </div>
               
@@ -264,11 +267,13 @@ const Index = () => {
             </div>
             
             <div>
-              <h3 className="text-lg font-bold mb-4">Logo Placeholder</h3>
-              <div className="bg-blue-800 rounded-lg p-6 border-2 border-dashed border-blue-600">
-                <p className="text-blue-300 text-sm">
-                  Custom logo designed by professor's son will be placed here
-                </p>
+              <h3 className="text-lg font-bold mb-4">Our Logo</h3>
+              <div className="flex justify-center md:justify-start">
+                <img 
+                  src="/lovable-uploads/8827dd1b-8bd4-4060-bc41-4b35340cfb04.png" 
+                  alt="Influence U Logo" 
+                  className="h-16 w-auto bg-white rounded-lg p-2"
+                />
               </div>
             </div>
           </div>
