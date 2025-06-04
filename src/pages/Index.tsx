@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,14 +16,27 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-blue-100">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-4"> {/* Adjusted padding */}
           <div className="flex justify-between items-center">
+            {/* Logo section */}
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">IU</span>
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <img 
+                  src="/uploads/Screenshot 2025-06-04 020053.png"
+                  alt="IU Logo"
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
-              <span className="text-xl font-bold text-blue-900">Influence U</span>
+              <span className="text-lg sm:text-xl font-bold text-blue-900">Influence U</span>
             </div>
+            
+            {/* Mobile menu button */}
+            <button className="md:hidden">
+              <span className="sr-only">Open menu</span>
+              {/* Add your menu icon here */}
+            </button>
+
+            {/* Desktop navigation */}
             <div className="hidden md:flex space-x-6">
               <button onClick={() => scrollToSection('about')} className="text-blue-700 hover:text-blue-900 transition-colors">About</button>
               <button onClick={() => scrollToSection('vision')} className="text-blue-700 hover:text-blue-900 transition-colors">Vision</button>
@@ -36,11 +48,11 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6">
+      <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
         <div className="container mx-auto text-center max-w-4xl">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6 leading-tight">
-              Welcome to <span className="text-blue-600">Influence U</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight bg-gradient-to-r from-blue-600 via-blue-400 to-blue-600 text-transparent bg-clip-text bg-[length:200%_auto] animate-gradient">
+              Welcome to <span className="text-transparent">Influence U</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-700 mb-8 leading-relaxed">
               Empowering the next generation of social media influencers
@@ -58,8 +70,8 @@ const Index = () => {
           <div className="mt-16 relative">
             <div className="bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl p-8 shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=400&fit=crop&crop=center" 
-                alt="Content creator filming with professional setup" 
+                src="/uploads/8827dd1b-8bd4-4060-bc41-4b35340cfb04.png" 
+               alt="Content creator filming with professional setup" 
                 className="w-full h-64 md:h-80 object-cover rounded-xl"
               />
             </div>
@@ -85,14 +97,14 @@ const Index = () => {
               </p>
               <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600">
                 <p className="text-blue-800 italic">
-                  *Influence U is a fictional company created by Professor Greg Thompson to help teach students effective communication.
+                  *Influence U is a fictional organization created by Professor Greg Thompson.
                 </p>
               </div>
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&crop=center" 
-                alt="Content creator working on laptop" 
+                src="/uploads/Website-BlogPost-Image.jpg" 
+                alt="People Dancing" 
                 className="w-full h-64 object-cover rounded-xl shadow-lg"
               />
             </div>
@@ -107,18 +119,20 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-blue-900 mb-6">Our Vision</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-blue-700 max-w-2xl mx-auto">
-              We believe in empowering creators through four core principles that drive success in the digital world.
+              We believe in empowering creators through three core principles that drive success in the digital world.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto px-4 sm:px-6">
             <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white border-blue-200">
               <CardContent className="pt-6">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Lightbulb className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Creativity</h3>
-                <p className="text-gray-600">Unleash your unique voice and create content that resonates with your audience.</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Content</h3>
+                <p className="text-gray-600 mb-2">Shows clear interest in the job.</p>
+                <p className="text-gray-600 mb-2">Provides relevant details about why the speaker is a good fit for the role.</p>
+                <p className="text-gray-600">Includes name and clear contact information.</p>
               </CardContent>
             </Card>
             
@@ -127,8 +141,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Strategy</h3>
-                <p className="text-gray-600">Develop data-driven approaches to grow your influence and reach your goals.</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Tone of Voice</h3>
+                <p className="text-gray-600 mb-2">The message is clear, professional, and appropriately enthusiastic</p>
+                <p className="text-gray-600">The tone is engaged, easy to follow, and pleasant.</p>
               </CardContent>
             </Card>
             
@@ -137,18 +152,9 @@ const Index = () => {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="h-8 w-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Growth</h3>
-                <p className="text-gray-600">Scale your influence with proven techniques and industry best practices.</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white border-blue-200">
-              <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-blue-900 mb-3">Connection</h3>
-                <p className="text-gray-600">Build authentic relationships with your community and brand partners.</p>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Length and Clarity</h3>
+                <p className="text-gray-600 mb-2">Voicemail is 30-60 seconds long.</p>
+                <p className="text-gray-600">The message is well-paced, with no rushed or mumbled sections.</p>
               </CardContent>
             </Card>
           </div>
@@ -162,10 +168,7 @@ const Index = () => {
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join Us?</h2>
               <p className="text-xl mb-8 leading-relaxed">
-                Are you passionate about social media? Have the work ethic, creativity, and drive to make an impact? We want to hear from you!
-              </p>
-              <p className="text-lg mb-6 leading-relaxed">
-                Call this number to leave a voicemail telling us about yourself and why you're interested, and we'll get back to you.
+               Are you passionate about social media? Do you have the work ethic, creativity, and communication skills to help others grow their online influence? At Influence U, we are building a team of innovators, driven by a desire to inspire and support aspiring influencers. We are looking for people like YOU to join our team! If you’re ready to make an impact, give us a call to express your interest and let us know why you’re a perfect fit for Influence U
               </p>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 mb-8">
                 <p className="text-lg mb-2">Leave us a voicemail</p>
@@ -197,7 +200,7 @@ const Index = () => {
             <CardContent className="p-8">
               <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mb-8">
                 <p className="text-blue-800 text-center">
-                  <strong>Note:</strong> This is a demonstration form for a college communications project. For actual inquiries, please call the number above.
+                  <strong>Note:</strong> This is a demonstration form for proof of concept. no it dosen't work.
                 </p>
               </div>
               
@@ -250,7 +253,11 @@ const Index = () => {
             <div>
               <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
                 <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">IU</span>
+                  <img 
+                    src="/uploads/Screenshot 2025-06-04 020053.png"
+                    alt="IU Logo"
+                    className="w-full h-full object-contain rounded-lg"
+                  />
                 </div>
                 <span className="text-xl font-bold">Influence U</span>
               </div>
@@ -262,16 +269,16 @@ const Index = () => {
             <div>
               <h3 className="text-lg font-bold mb-4">Contact Info</h3>
               <p className="text-blue-200 mb-2">📞 843-349-7108</p>
-              <p className="text-blue-200 mb-2">✉️ hello@influenceu.com</p>
-              <p className="text-blue-200">📍 Virtual Campus Worldwide</p>
+              <p className="text-blue-200 mb-2">✉️ PleaseRaise@MyGrade.com</p>
+              <p className="text-blue-200">📍 Horry-Georgetown Technical College</p>
             </div>
             
             <div>
               <h3 className="text-lg font-bold mb-4">Our Logo</h3>
               <div className="flex justify-center md:justify-start">
                 <img 
-                  src="/lovable-uploads/8827dd1b-8bd4-4060-bc41-4b35340cfb04.png" 
-                  alt="Influence U Logo" 
+                  src="/uploads/Screenshot 2025-06-04 020053.png"
+                  alt="IU Logo"
                   className="h-16 w-auto bg-white rounded-lg p-2"
                 />
               </div>
@@ -280,7 +287,7 @@ const Index = () => {
           
           <div className="border-t border-blue-800 mt-8 pt-8 text-center">
             <p className="text-blue-300">
-              © 2024 Influence U. This is a fictional company created for educational purposes in a professional communications course.
+              © 2025 Influence U. All rights reserved.
             </p>
           </div>
         </div>
