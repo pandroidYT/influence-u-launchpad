@@ -287,7 +287,7 @@ const Index = () => {
           
           <div className="border-t border-blue-800 mt-8 pt-8 text-center">
             <p className="text-blue-300">
-              © 2025 Influence U. All rights reserved.
+              © im so tired.
             </p>
           </div>
         </div>
