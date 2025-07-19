@@ -26,9 +26,10 @@ const Testimonials = () => {
               {/* Story 1 */}
               <Card className="overflow-hidden">
                 <img 
-                  src="/uploads/part 1.png" 
+                  src="/uploads/part1.webp" 
                   alt="Sarah's Journey" 
                   className="w-full h-48 object-cover"
+                  loading="lazy"
                 />
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
@@ -48,9 +49,10 @@ const Testimonials = () => {
               {/* Story 2 */}
               <Card className="overflow-hidden">
                 <img 
-                  src="/uploads/parrt 2.webp" 
+                  src="/uploads/part2.webp" 
                   alt="Mike's Success" 
                   className="w-full h-48 object-cover"
+                  loading="lazy"
                 />
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
@@ -70,9 +72,10 @@ const Testimonials = () => {
               {/* Story 3 */}
               <Card className="overflow-hidden">
                 <img 
-                  src="/uploads/part 3.png" 
+                  src="/uploads/part3.webp" 
                   alt="Lisa's Growth" 
                   className="w-full h-48 object-cover"
+                  loading="lazy"
                 />
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
@@ -86,6 +89,52 @@ const Testimonials = () => {
                   <p className="text-blue-700">
                     "I went from struggling with content ideas to having a clear, engaging strategy. Now my fitness content reaches millions, and I've built a genuine community."
                   </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Famous Influencer Testimonials */}
+          <div className="mt-20">
+            <h2 className="text-3xl font-bold text-blue-900 mb-12 text-center">Famous Alumni Testimonials</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Charli D'Amelio */}
+              <Card className="overflow-hidden">
+                <img 
+                  src="/uploads/charli.webp" 
+                  alt="Charli D'Amelio" 
+                  className="w-full h-48 object-cover rounded-t"
+                  loading="lazy"
+                />
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-2">Charli D'Amelio</h3>
+                  <p className="text-blue-700 text-base">“I thought I had viral fame figured out, but Influence U taught me the one dance I hadn’t mastered – the algorithm two-step. Now I’m trending even in my sleep! 😄”</p>
+                </CardContent>
+              </Card>
+              {/* MrBeast */}
+              <Card className="overflow-hidden">
+                <img 
+                  src="/uploads/mrbeast.webp" 
+                  alt="MrBeast" 
+                  className="w-full h-48 object-cover rounded-t"
+                  loading="lazy"
+                />
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-2">MrBeast</h3>
+                  <p className="text-blue-700 text-base">“I’ve done crazy challenges on YouTube, but enrolling in Influence U was next level. The best part? They didn’t even make me give away $100,000 to pass the final! My videos got better and I kept my money – talk about a win-win. 🎉”</p>
+                </CardContent>
+              </Card>
+              {/* Rhett & Link */}
+              <Card className="overflow-hidden">
+                <img 
+                  src="/uploads/gmm.webp" 
+                  alt="Rhett & Link" 
+                  className="w-full h-48 object-cover rounded-t"
+                  loading="lazy"
+                />
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-2">Rhett & Link</h3>
+                  <p className="text-blue-700 text-base">“We never thought we’d go back to school. But now it’s ‘Good Mythical Morning, class!’ thanks to Influence U. They even taught two old Internetainers like us some new tricks – our content is now mythically good and we got A+’s in having fun. ✨”</p>
                 </CardContent>
               </Card>
             </div>
