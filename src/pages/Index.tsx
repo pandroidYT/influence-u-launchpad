@@ -40,7 +40,221 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </Layout>
+
+      {/* About Us Section */}
+      <section id="about" className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-900 mb-6">About Influence U</h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                At Influence U, we provide comprehensive training, mentorship, and representation for aspiring social media influencers. Our expert team helps you develop authentic content strategies, build engaged communities, and turn your passion into a thriving career.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                From content creation workshops to brand partnership negotiations, we guide you through every step of your influencer journey with personalized support and industry insights.
+              </p>
+              <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-600">
+                <p className="text-blue-800 italic">
+                  *Influence U is a fictional organization created by Professor Greg Thompson.
+                </p>
+              </div>
+            </div>
+            <div>
+              <img 
+                src="/uploads/Website-BlogPost-Image.jpg" 
+                alt="People Dancing" 
+                className="w-full h-64 object-cover rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Vision Section */}
+      <section id="vision" className="py-16 px-6 bg-gradient-to-br from-blue-50 to-blue-100">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-900 mb-6">Our Vision</h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <p className="text-xl text-blue-700 max-w-2xl mx-auto">
+              We believe in empowering creators through three core principles that drive success in the digital world.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto px-4 sm:px-6">
+            <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white border-blue-200">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Lightbulb className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Content</h3>
+                <p className="text-gray-600 mb-2">Shows clear interest in the job.</p>
+                <p className="text-gray-600 mb-2">Provides relevant details about why the speaker is a good fit for the role.</p>
+                <p className="text-gray-600">Includes name and clear contact information.</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white border-blue-200">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Target className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Tone of Voice</h3>
+                <p className="text-gray-600 mb-2">The message is clear, professional, and appropriately enthusiastic</p>
+                <p className="text-gray-600">The tone is engaged, easy to follow, and pleasant.</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white border-blue-200">
+              <CardContent className="pt-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-blue-900 mb-3">Length and Clarity</h3>
+                <p className="text-gray-600 mb-2">Voicemail is 30-60 seconds long.</p>
+                <p className="text-gray-600">The message is well-paced, with no rushed or mumbled sections.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Join Us Callout Section */}
+      <section id="join" className="py-16 px-6 bg-white">
+        <div className="container mx-auto max-w-4xl">
+          <Card className="bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-2xl">
+            <CardContent className="p-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join Us?</h2>
+              <p className="text-xl mb-8 leading-relaxed">
+               Are you passionate about social media? Do you have the work ethic, creativity, and communication skills to help others grow their online influence? At Influence U, we are building a team of innovators, driven by a desire to inspire and support aspiring influencers. We are looking for people like YOU to join our team! If you’re ready to make an impact, give us a call to express your interest and let us know why you’re a perfect fit for Influence U
+              </p>
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6 mb-8">
+                <p className="text-lg mb-2">Leave us a voicemail</p>
+                <p className="text-2xl font-bold">📞 843-349-7108</p>
+              </div>
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg rounded-full transition-all duration-300 hover:scale-105"
+              >
+                Contact Us Today
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 px-6 bg-gradient-to-br from-blue-50 to-white">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-blue-900 mb-6">Get In Touch</h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <p className="text-xl text-blue-700">
+              Ready to start your influencer journey? We'd love to hear from you!
+            </p>
+          </div>
+          
+          <Card className="shadow-xl border-blue-200">
+            <CardContent className="p-8">
+              <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mb-8">
+                <p className="text-blue-800 text-center">
+                  <strong>Note:</strong> This is a demonstration form for proof of concept. no it dosen't work.
+                </p>
+              </div>
+              
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="name" className="text-blue-900 font-medium">Full Name</Label>
+                    <Input 
+                      id="name" 
+                      placeholder="Enter your full name" 
+                      className="mt-2 border-blue-200 focus:border-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="email" className="text-blue-900 font-medium">Email Address</Label>
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      placeholder="Enter your email" 
+                      className="mt-2 border-blue-200 focus:border-blue-500"
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <Label htmlFor="message" className="text-blue-900 font-medium">Message</Label>
+                  <Textarea 
+                    id="message" 
+                    placeholder="Tell us about your social media goals and experience..." 
+                    className="mt-2 border-blue-200 focus:border-blue-500 h-32"
+                  />
+                </div>
+                
+                <Button 
+                  type="button"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-lg"
+                >
+                  Send Message (Demo Only)
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white py-12 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+              <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
+                <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <img 
+                    src="/uploads/Screenshot 2025-06-04 020053.png"
+                    alt="IU Logo"
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+                <span className="text-xl font-bold">Influence U</span>
+              </div>
+              <p className="text-blue-200">
+                Empowering the next generation of social media influencers through education, mentorship, and strategic growth.
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+              <p className="text-blue-200 mb-2">📞 843-349-7108</p>
+              <p className="text-blue-200 mb-2">✉️ PleaseRaise@MyGrade.com</p>
+              <p className="text-blue-200">📍 Horry-Georgetown Technical College</p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-bold mb-4">Our Logo</h3>
+              <div className="flex justify-center md:justify-start">
+                <img 
+                  src="/uploads/Screenshot 2025-06-04 020053.png"
+                  alt="IU Logo"
+                  className="h-16 w-auto bg-white rounded-lg p-2"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-blue-800 mt-8 pt-8 text-center">
+            <p className="text-blue-300">
+              © im so tired.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 
